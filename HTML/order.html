@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+             h1{
+                color: blue;
+            }
+            .main{
+                background-color: aqua;
+                border: dotted;
+                padding: 10rem;
+                color: brown;
+            }
+            #box1{
+                margin-left:10rem;
+            }
+            #box2{
+                margin-top: 5rem;
+                margin-left: 15rem;
+            }
+            form{
+                font-size:large;
+
+            }
+    </style>
+</head>
+<body>
+    <div class="main">
+       <div class="upper" id="box1">
+           <h1>Form for publishing house called X </h1>
+       </div>
+       <div class="Lower" id="box2">
+
+           <form>
+               Customer Name<br>
+               <input type="text"><br><br>
+               Address<br>
+               <textarea row="35",cols="20"></textarea><br><br>
+               Mobile number<br>
+               <input type="tel" id="phone" name="phone" placeholder="Enter the mobile no." pattern="[0-9]{10}" required><br><br>
+               Books title<br>
+               <input type="text"><br><br>
+               Author name<br>
+               <input type="text"><br><br>
+               Edition no.<br>
+               <input type="text"><br><br>
+               Additional note<br>
+               <input type="text"><br><br>
+               Payment <br>
+               <input type="radio">cash on delivery<br><br>
+               <input type="submit">
+
+            </form>
+        </div>
+            
+    </div>
+    
+</body>
+</html>

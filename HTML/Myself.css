@@ -1,0 +1,15 @@
+body{
+    background-color: blue;
+
+}
+h1{
+    text-align: center;
+    color: rgb(223, 10, 46);
+}
+h2{
+    color: brown;
+    font-style: italic;
+}
+h3{
+    color: bisque;
+}
