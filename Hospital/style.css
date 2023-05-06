@@ -6,7 +6,7 @@
     --light-color:#777
     --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
     --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2)
-    --border:.2rem solid var(--green);
+    --border:.2rem solid rgb(11, 190, 190);;
  }
 
 *{
@@ -53,7 +53,7 @@ section:nth-child(even){
 .heading span{
     text-transform: uppercase;
     /* color: var(--green); */
-    color: aqua;
+    color: rgb(11, 190, 190);
 }
 
 .btn{
@@ -64,7 +64,7 @@ section:nth-child(even){
    border: var(--border);
    border-radius: .5rem;
    box-shadow: var(--box-shadow);
-   color: var(--green);
+   color: rgb(11, 190, 190);
    cursor: pointer;
    font-size: 1.7rem;
    background: #fff;
@@ -73,18 +73,18 @@ section:nth-child(even){
 .btn span{
     padding: .7rem 1rem;
     border-radius: .5rem;
-   background: var(--green);
+   background:rgb(11, 190, 190);
    color: #fff;
    margin-left: .5rem;
 }
 
 .btn:hover{
-    background: var(--green);
+    background:rgb(11, 190, 190);
     color: #fff;
 }
 
 .btn:hover span{
-   color: var(--green);
+   color:rgb(11, 190, 190);
     background: #fff;
     margin-left: 1rem;
 }
@@ -107,7 +107,7 @@ color: var(--black);
 }
 
 .header .logo i{
-    color: lightseagreen;
+    color:rgb(11, 190, 190);
 
 }
 
@@ -118,8 +118,7 @@ color: var(--black);
 }
 
 .header .navbar a:hover{
-    /* color: rgb(31, 180, 31); */
-    color: rgb(59, 175, 117);
+    color: rgb(11, 190, 190);
 
 }
 
@@ -128,7 +127,7 @@ color: var(--black);
    border-radius: .5rem;
    
    background: #eee;
-   color: rgb(59, 175, 117);
+   color:rgb(11, 190, 190);;
    padding: 1rem 1.5rem;
    cursor: pointer;
    display: none;
@@ -191,7 +190,7 @@ color: var(--black);
 
 .icons-container .icons i{
      font-size: 4.5rem;
-     color: var(--green);
+     color:rgb(11, 190, 190);
      padding-bottom: 0.7rem;
 
 }
@@ -225,7 +224,7 @@ color: var(--black);
 
 .services .box-container .box i{
     padding-bottom: .5rem;
-    color: aqua;
+    color: rgb(11, 190, 190);
     font-size: 5rem;
 }
 
@@ -303,7 +302,7 @@ color: var(--black);
 }
 
 .doctors .box-container .box span{
-    color: var(--green);
+    color:rgb(11, 190, 190);
     /* color: aqua; */
     font-size: 1.5rem;
 }
@@ -319,7 +318,7 @@ color: var(--black);
     width: 5rem;
     line-height: 4.5rem;
     font-size: 2rem;
-    color: var(--green);
+    color: rgb(11, 190, 190);
     border-radius: 0.5rem;
     border: var(--border);
     margin: 0.3rem;
@@ -327,7 +326,7 @@ color: var(--black);
 
 
 .doctors .box-container .box .share a:hover{
-    background: var(--green);
+    background: rgb(11, 190, 190);
     color: #fff;
     box-shadow: var(--box-shadow);
 }
@@ -483,12 +482,12 @@ color: var(--black);
  }
 
  .blogs .box-container .box .content .icon a:hover{
-    color: var(--green);
+    color:rgb(11, 190, 190);
  }
 
  .blogs .box-container .box .content .icon a i{
     padding-right: 0.5rem;
-    color: var(--green);
+    color: rgb(11, 190, 190);
  }
 
  .blogs .box-container .box .content h3{
@@ -526,7 +525,7 @@ color: var(--black);
 
  .footer .box-container .box a i{
     padding-right: 0.5rem;
-    color: var(--green);
+    color:rgb(11, 190, 190);
  }
 
  .footer .box-container .box a:hover i{
@@ -543,7 +542,7 @@ color: var(--black);
 }
 
 .footer .credit span{
-    color: var(--green);
+    color: rgb(11, 190, 190);
 }
 
 
