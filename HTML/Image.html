@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change image size</title>
+    <style>
+        img{
+            height: 100px;
+            width: 200px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change image size</h1>
+    <img src="https://wallpapers.com/images/featured/2ygv7ssy2k0lxlzu.jpg" id="image" alt=""><br>
+    <button onclick="resize()">Change image size</button>
+
+    <script>
+
+        function resize(){
+            var size=document.getElementById("image");
+            size.style.width= '400px';
+            size.style.height= '300px';
+
+        }
+    </script>
+</body>
+</html>
