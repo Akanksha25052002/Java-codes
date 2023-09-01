@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1" ><br>
+    <input type="button" value="show" onclick="show()">
+    <input type="button" value="clear" id="cle" onclick="t1.value=''">
+    <input type="button" value="read only" onclick=" t1.readOnly=1;">
+    <input type="button" value="edit text" onclick=" t1.readOnly=0;">
+    
+<script>
+    function show(){
+        alert(t1.value);
+    }
+    
+</script>
+
+</body>
+</html>

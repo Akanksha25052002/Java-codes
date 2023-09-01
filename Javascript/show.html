@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1">
+    <input type="text" id="t2">
+
+    <p id="p1"></p>
+    <!-- <input type="button" value="click" onclick="t2.value=t1.value;p1.innerText=t1.value"> -->
+    <input type="button" value="click" onclick="display()">
+
+    <script>
+        function display(){
+            document.getElementById("t2").innerText=document.getElementById("t1").innerText;
+            document.getElementById("p1").innerText=document.getElementById("t1").innerText;
+        }
+    </script>
+    
+
+</body>
+</html>

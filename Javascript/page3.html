@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Uid:
+        <input type="text" name="" id="uid">
+        Pwd:
+        <input type="password" name="" id="pwd">
+        <input type="button" id="b1" value="save" onclick="save(uid.value,pwd.value)">
+
+    </form>
+    <script>
+        function save(u,p){
+            window.sessionStorage.setItem("uid",u);
+            window.sessionStorage.setItem("pwd",p);
+
+            window.location="page4.html";
+
+        }
+    </script>
+</body>
+</html>

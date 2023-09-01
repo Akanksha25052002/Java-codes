@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<select id="ct" onchange="alert(this.value)">
+    <option value="south indian" name="dishes"">south indian</option>
+    <option value="chole bhature" name="dishes">chole bhature</option>
+    <option value="manchurian" name="dishes">manchurian</option>
+    <option value="dosa" name="dishes">dosa</option>
+</select>
+
+<input type="button" value="show" id="b1" onclick="alert(ct.value);">
+
+<!-- <input type="button" value="show" id="b1" onclick="fnlst()"> -->
+<ol id="o"></ol>
+
+<script>
+// function fn(){
+    // console.log(a.value);
+    // }
+    
+    function fnlst(){
+    var a=document.getElementsByName("dishes");
+    a.options.forEach(element => {e=>{console.log(e);}
+    a.options.forEach(element => {e=>{console.log(e);}
+    });
+}
+</script>
+</body>
+</html>

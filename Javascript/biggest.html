@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1">
+    <input type="text" id="t2">
+    <input type="button" value="check" id="b1" onclick="fn()">
+    <p id="p1"></p>
+
+    <script>
+        function fn(){
+            var a=document.getElementById("t1").value;
+            var b=document.getElementById("t2").value;
+            if(a>b){
+                document.getElementById("p1").innerText="a is greater";
+            }
+            else{
+                document.getElementById("p1").innerText="b is greater";
+
+            }
+
+        }
+    </script>
+</body>
+</html>

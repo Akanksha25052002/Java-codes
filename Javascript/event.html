@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="abc.html" onsubmit=return "fnvalid()">
+enter name:
+<input type="text" id="t1" name="ename">
+enter password:
+<input type="password" name="pwd" id="p1">
+<input type="submit">
+</form>
+
+<script>
+    function fnvalid(){
+        if(document.getElementById("t1").value.length==0){
+            return false;
+        }
+        if(document.getElementById("p1").value.length==0){
+            return false;
+        }
+        else{
+            return true;
+        }
+
+    }
+</script>
+</body>
+</html>

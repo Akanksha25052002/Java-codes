@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1">
+    <input type="button" value="check" id="b1" onclick="fn(t1)">
+    <p id="p1"></p>
+
+    <script>
+        function fn(){
+            var a=document.getElementById("t1").value;
+            if(a%2==0){
+                document.getElementById("p1").innerText="even";
+                // console.log("even");
+            }
+            else{
+                document.getElementById("p1").innerText="odd";
+                // console.log("odd");
+
+            }
+
+        }
+    </script>
+</body>
+</html>

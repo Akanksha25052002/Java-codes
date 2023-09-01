@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enter a number:
+    <input type="text" id="t1">
+    <input type="button" id="b1" value="check" onclick="fnchk()">
+    <p id="p1"></p>
+
+
+    <script>
+        function fnchk(){
+            var n=document.getElementById("t1").value;
+        //    a= n.split("");
+        //    l=a.length;
+           sum=0;
+       while(n>0){
+        var rem=n%10;
+        n=n/10;
+        sum+=rem*rem*rem;
+          
+    }
+       if(sum!=n){
+        // document.getElementById("p1").innerText="Not Armstrong";
+        console.log("not armstrong");
+       }
+       else{
+        // document.getElementById("p1").innerText="Armstrong";
+        console.log("armstrong");
+
+
+       }
+       
+        }
+    </script>
+</body>
+</html>

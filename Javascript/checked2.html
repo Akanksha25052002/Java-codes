@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" name="c1" value="hockey">hockey<br>
+    <input type="checkbox" name="c1" value="Badminton">Badminton<br>
+    <input type="checkbox" name="c1" value="cricket">cricket<br>
+    <input type="checkbox" name="c1" value="chess">chess<br>
+    <input type="checkbox" name="c1" value="football">football<br>
+    <input type="checkbox" name="c1" value="tennis">tennis<br>
+
+    <input type="button" value="show" onclick="fncount()">
+    <ul id="u"></ul>
+
+    <script>
+        function fncount()
+        {
+            var ar=document.getElementsByName("c1");
+            ar.forEach(e=>{if(e.checked)
+            console.log(e.value)});
+
+            ar=Array.from(ar);
+            str=ar.map(e=>"<li>"+e.value+"</li>");
+            str.join();
+            // document.getElementById("u").innerHTML=str;
+            document.getElementById("u").innerText=str;
+
+          
+            // ar=Array.from(ar);
+            // str=ar.filter(e=>{(e.checked)"<li>"+e.value+"</li>"});
+            // str.join();
+            // document.getElementById("u").innerHTML=str;
+
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>

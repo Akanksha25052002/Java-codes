@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter year of birth
+    <input type="text" id="t1">
+    <input type="button" id="b1" value="check" onclick="fnchk(t1)">
+    <p id="p1"></p>
+
+    <script>
+        function fnchk(t1){
+           var a= document.getElementById("t1").value;
+           if(a%4==0 || a%100==0 || a%400==0){
+            document.getElementById("p1").innerText="leap year";
+           }
+           else{
+            document.getElementById("p1").innerText="not leap year";
+           }
+        }
+    </script>
+</body>
+</html>

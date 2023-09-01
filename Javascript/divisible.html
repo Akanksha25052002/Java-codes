@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1" >
+    <input type="button" value="check" id="b1" onclick="fnchk()">
+    <p id="p1"></p>
+
+    <script>
+        function fnchk(){
+            var n=document.getElementById("t1").value;
+            if(n%7==0){
+            document.getElementById("p1").innerText=n+" "+"is divisible by 7";   
+            }
+            else{
+            document.getElementById("p1").innerText=n+" "+"is not divisible by 7";   
+
+            }
+        }
+    </script>
+</body>
+</html>

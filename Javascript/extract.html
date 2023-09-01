@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="email" placeholder="Enter email" id="t1">
+<input type="button" value="extract" onclick="fnextract()">
+<p id="p1"></p>
+
+<script>
+    function fnextract(){
+        var a=document.getElementById("t1").value;
+        var b=a.split("@");
+        var c=b[1];
+        document.getElementById("p1").innerText="Your mail is on "+c;
+    }
+</script>
+</body>
+</html>

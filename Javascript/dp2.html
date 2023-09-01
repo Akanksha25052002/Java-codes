@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="lst" size="5" >
+        <option value="south indian" name="dishes"">south indian</option>
+        <option value="chole bhature" name="dishes">chole bhature</option>
+        <option value="manchurian" name="dishes">manchurian</option>
+        <option value="dosa" name="dishes">dosa</option>
+        <option value="poha" name="dishes">poha</option>
+
+    </select>
+    <input type="button" id="b1" value="show" onclick="fnlst(lst)">
+   <ol id="o"></ol>
+
+<script>
+
+    function fnlst(l){
+    l=Array.from(l);
+l.option.forEach(e => {console.log(e.value);
+    
+});
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter date
+    <input type="text" id="t1" pattern="dd/mm/yyyy" placeholder="dd/mm/yyyy">
+    <input type="button" id="b1" value="validate" onclick="fn()">
+    <p id="p1"></p>
+
+    <script>
+        function fn(){
+            i=false;
+            var a=document.getElementById("t1").value;
+
+            var b=a.split("/");
+
+            i=(b[0]>=1 && b[0]<=31 && b[1]>=1 && b[1]<=12) && 
+                (((b[0]==31) && (b[1]==1 || b[1]==3 || b[1]==5 || b[1]==7 || b[1]==8 || b[1]==10 || b[1]==12 )) ||
+                ((b[0]==29) && (b[1]==2) && b[2]%4==0) ||
+                 ((b[0]<=30) && (b[1]==4 || b[1]==6 || b[1]==9 || b[1]==11)));
+           
+                 
+
+            document.getElementById("p1").innerText=i;
+        }
+
+    </script>
+
+</body>
+</html>

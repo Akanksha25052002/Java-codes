@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="radio" name="r1" value="green" onclick="alert(this.value);">green<br>
+    <input type="radio" name="r1" value="red" onclick="alert(this.value);">red<br>
+    <input type="radio" name="r1" value="blue" onclick="alert(this.value);">blue<br> -->
+
+    <input type="radio" name="r1" value="green" >green<br>
+    <input type="radio" name="r1" value="red" ">red<br>
+    <input type="radio" name="r1" value="blue" >blue<br>
+
+    <input type="submit" value="submit" onclick="fn()">
+
+    <script>
+        var x;
+        function fn(v){
+            x=v;
+        }
+        function fnchecked(){
+            x=document.getElementsByName("r1").innerText;
+            for(i=0;i<x.length;i++){
+
+                if(x.checked){
+                    alert(x.value);
+                }
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

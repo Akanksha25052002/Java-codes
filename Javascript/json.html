@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="search">city<br>
+    <input type="radio" name="search">salary<br>
+    <input type="text" id="t" placeholder="search box">
+    <input type="button" name="search" id="b1" value="search" onclick="show(t1.value)">
+
+<table id="tb">
+    <tr>
+        <td>Eno</td>
+        <td>Ename</td>
+        <td>City</td>
+        <td>Salary</td>
+    </tr>
+    <tbody id="tbody">
+    </tbody>
+</table>
+<input type="text" id="t1">
+<input type="text" id="t2">
+<input type="text" id="t3">
+<input type="text" id="t4">
+<input type="button" value="add" id="b1" onclick="add(t1.value,t2.value,t3.value,t4.value)">
+<input type="button" value="json" onclick="store()">
+
+
+<script>
+    var data=[{"eno":1,"ename":"aman","city":"pune","salary":5000},{"eno":2,"ename":"mansi","city":"delhi","salary":6000},{"eno":3,"ename":"ajay","city":"mumbai","salary":8000},{"eno":4,"ename":"nitin","city":"bhopal","salary":9000},{"eno":5,"ename":"komal","city":"banglore","salary":7000},{"eno":6,"ename":"kanchan","city":"amritsar","salary":15000},{"eno":7,"ename":"yash","city":"datia","salary":50000},{"eno":8,"ename":"neeraj","city":"gwalior","salary":5000}];
+
+    function show(){
+        var str=data.map(r=>"<tr><td>"+r.eno+"<td>"+r.ename+"<td>"+r.city+"<td>"+r.salary+"</tr>").join("");
+            document.getElementById("tbody").innerHTML=str;
+        }
+        show();
+
+        function add(v1,v2,v3,v4){
+            document.getElementById("tbody").innerHTML+="<tr><td>"+v1+"<td>"+v2+"<td>"+v3+"<td>"+v4+"</tr>";
+            }
+
+            function store(){
+                window.localStorage.setItem("tb",JSON.stringify("data"));
+                window.location="page5.html";
+            }
+</script>
+</body>
+</html>

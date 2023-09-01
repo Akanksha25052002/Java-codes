@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Print series of 1 and 9 in console</h1>
+    <!-- <input type="text" id="t1"> -->
+    series of 1: 
+    <input type="button" id="b1" value="series 1" onclick="fn()"><br>
+    series of 9: 
+    <input type="button" id="b1" value="series 2" onclick="f1()">
+
+    <!-- <p id="p1"></p> -->
+    <!-- <span id="p1"></span> -->
+    <div id="p1"></div>
+    <div id="p2"></div>
+
+    <script>
+    function fn(){
+        sum=0; j=1;
+        for(i=1;i<10;i++){
+            
+            j = (j * 10) + 1;
+        // k=j-1;
+            document.getElementById("p1").innerText+=" "+j;
+            // document.getElementById("p1").innerText+=" ";
+            console.log(j);
+                }
+    }
+
+    function f1(){
+        for(i=1;i<10;i++){
+            j=10**i;
+        k=j-1;
+            console.log(k);
+            document.getElementById("p2").innerText+=" "+k;
+
+        }
+    }
+    </script>
+</body>
+</html>

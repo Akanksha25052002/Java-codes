@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="c1"> hello </h1>
+
+    <p class="c1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, a numquam veniam modi recusandae laudantium.</p>
+    <p class="c1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, a numquam veniam modi recusandae laudantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, a numquam veniam modi recusandae laudantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, a numquam veniam modi recusandae laudantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, a numquam veniam modi recusandae laudantium.</p>
+
+    <input type="text" id="t1" name="page">
+    <input type="text" id="t2" name="page">
+    <input type="text" id="t3" name="page">
+    <input type="text" id="t4" class="c1" name="page">
+    <input type="text" id="t5" name="page">
+
+    <input type="button" value="show" onclick="display()">
+<script>
+    function display(){
+        // var p=document.getElementsByTagName("p");
+        // for(i=0;i<p.length;i++){
+        //     // console.log(p[i]);
+        //     console.log(p[i].innerText);
+
+
+        // }
+
+        var p=document.getElementsByClassName("c1");
+        // for(i=0;i<p.length;i++){
+        //     console.log(p[i]);
+        // }
+        p=Array.from(p);
+        p.forEach(v=> console.log(v.innerText));
+    }
+</script>
+</body>
+</html>

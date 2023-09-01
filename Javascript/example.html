@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+enter salary
+<input type="text" id="t1"><br><br>
+city
+<select id="city" >
+    <option value="Gwalior">Gwalior</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Kolkata">Kolkata</option>
+    <option value="Jhansi">Jhansi</option>
+    <option value="Mathura">Mathura</option>
+    <option value="Agra">Agra</option>
+    <option value="Chennai">chennai</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Bhopal">Bhopal</option>
+
+
+</select><br><br>
+HRA
+<input type="checkbox" name="hra" id="hra"><br><br>
+Gender
+<input type="radio" name="Gender" value="female" id="f">female
+<input type="radio" name="Gender" value="male" id="m">male
+<br><br>
+<input type="submit" value="calculate" id="cal" onclick="fn()"><br><br>
+
+Da <input type="text" name="da" id="da"><br>
+Ta <input type="text"name="ta" id="ta"><br>
+HRA <input type="text" name="hra" id="hr"><br>
+Sp all <input type="text" name="sp all" id="sp all"><br>
+
+<script>
+    function fn(){
+        var a=document.getElementById("t1").value;
+        document.getElementById("da").value=(1.2*a);
+        
+        if(hra.checked){
+            // console.log(0.4*a);
+            document.getElementById("hr").value=(0.4*a);
+        }
+        
+        if(city.value=="Delhi" ||city.value=="Mumbai"||city.value=="Chennai"){
+            document.getElementById("ta").value=(0.5*a);
+        }
+        else if(city.value=="Kolkata" ||city.value=="Agra"||city.value=="Mathura"){
+            document.getElementById("ta").value=(0.4*a);
+        }
+        else{
+            document.getElementById("ta").value=(0.3*a);
+        }
+        if(f.checked){
+            document.getElementById("sp all").value=(0.02*a);
+        }
+
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Guess the number</h1>
+    <input type="text" id="t1">
+    <input type="button" id="b1" value="click" onclick="fnguess()">
+    <p id="p1"></p>
+    <script>
+        count=0;
+        function fnguess(){
+            var b=document.getElementById("t1").value;
+            var a=Math.ceil(Math.random()*100);
+            console.log(a);
+          if(count<5){
+              if(a==b){
+                  document.getElementById("p1").innerText="welldone";
+
+            }else if(a<b){
+                document.getElementById("p1").innerText="try smaller";
+            }
+            else if(a>b){
+                document.getElementById("p1").innerText="try bigger";
+            }
+            count++;
+        }
+        else{
+            b1.disabled="true";
+            document.getElementById("p1").innerText="sorry the number was"+a;
+        }
+        }
+    </script>
+</body>
+</html>

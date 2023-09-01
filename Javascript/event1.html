@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1" oninput="alert(this.value);">
+<input type="button" id="b1" value="click">
+
+<script>
+    document.getElementById("b1").addEventListener("mouseover", function(){alert("mouse over")});
+
+    // document.addEventListener("event", element, function());
+    document.getElementById("t1").addEventListener("input", function(e){e.preventDefault()});
+</script>
+</body>
+</html>

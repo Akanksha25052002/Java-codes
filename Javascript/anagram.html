@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1">
+    <input type="text" id="t2">
+
+    <p id="p1"></p>
+    <input type="button" value="click" onclick="check()">
+
+    <script>
+        function check(){
+
+        if(t1.value.length!==t2.value.length)
+        {
+            // console.log("Invalid input");
+            document.getElementById("p1").innerText="Invalid";
+
+        }
+        else{
+        //     var str1=t1.value.sort('').join('');
+        //     var str2=t2.value.sort('').join('');
+        //     for(i=0;i<t1.length;i++){
+
+        //         if(t1[i]===t2[i]){
+        //             console.log("anagram");
+        //         }
+        //         else{
+        //             console.log("not anagram");
+        //         }
+        //     }
+        // }
+        // var a=document.getElementById("t1").value.toLowerCase();
+        // var b=document.getElementById("t2").value.toLowerCase();
+
+        var st1=t1.value.split("").sort().join("");
+        var st2=t2.value.split("").sort().join("");
+
+
+        if(st1===st2){
+            // console.log("anagram");
+            document.getElementById("p1").innerText="Anagram";
+        }
+        else{
+            // console.log("not anagram");
+            document.getElementById("p1").innerText="not Anagram";
+
+        }
+    }
+
+
+}
+
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter a number:
+    <input type="text" id="t1">
+    <input type="button" id="b1" value="check" onclick="fnchk(t1)">
+    <p id="p1"></p>
+
+
+    <!-- first approach - -->
+    <!-- <script>
+        function fnchk(t1){
+            var n=document.getElementById("t1").value;
+            if(n<=1){
+                document.getElementById("p1").innerText="not prime";
+            }
+            else if(n===2){
+                document.getElementById("p1").innerText="prime";
+            }
+            else if(n>2){
+                for(i=2;i<=n/2;i++){
+                    if(n%i==0){
+                        document.getElementById("p1").innerText="not prime";
+                    }
+                    else{
+                        document.getElementById("p1").innerText="prime";
+                    }
+                }
+            }
+            else{
+                document.getElementById("p1").innerText="prime";
+            }
+        }
+    </script> -->
+
+    <!-- second approach -->
+<script>
+    function fnchk(t1){
+        var n=document.getElementById("t1").value;
+        if((n==2 || n==5 || n==7 || n==11)||(n%2!=0 && n%5!=0 && n%7!=0 && n%11!=0)){
+            document.getElementById("p1").innerText="prime";
+        }
+        else{
+            document.getElementById("p1").innerText="not prime";
+        }
+
+    }
+</script>
+
+</body>
+</html>

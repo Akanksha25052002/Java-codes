@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="previous" onclick="window.history.back()">
+    <input type="button" value="next" onclick="window.history.forward()">
+    <input type="button" value="length" onclick="alert(window.history.length)">
+    <input type="button" value="go" onclick="window.history.go(2)"><br>
+
+    <input type="button" value="open" onclick="wopen()">
+    <input type="button" value="close" onclick="wclose()">
+    <input type="button" name="print" id="pr" value="print" onclick="window.print()">    
+
+    <a href="page1.html">
+        <input type="button" value="page1">
+    </a>
+
+    <script>
+        var w;
+        function wopen(){
+            // w=window.open();
+            // w=window.open("abc.html");
+            window.open("abc.html"," ","resizable=false, scrollbar=0, toolbar=0, width=400px, height=300px")
+        }
+        function wclose(){
+            w=window.close();
+            // window.close("abc.html");
+        }
+    </script>
+
+
+
+</body>
+</html>

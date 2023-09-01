@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1">
+    <input type="button" id="b1" value="show" onclick="alert(t1.value);">
+    <input type="button" id="b2" value="clear" onclick="t1.value=''">
+
+    <script>
+        function fnc(t1,b1){
+            if(t1.value.length==0)
+            t1.disabled=1;
+        else
+        t1.disabled=0;
+        }
+    </script>
+</body>
+</html>

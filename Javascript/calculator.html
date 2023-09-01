@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 30%;">
+        <form action="">
+            <input type="text" id="t1"><br>
+            
+                <input type="button" value="1" name="b1" style="width: 40px; height: 30px;" onclick="clickb()">
+                <input type="button" value="2" name="b1" style="width: 40px; height: 30px;" onclick="clickb()">
+                <input type="button" value="3" name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="+" name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="4" name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="5" name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="6" name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="-" name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="7" name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="8" name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="9" name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="*" name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="/" name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="0" name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="." name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="=" name="b1" style="width: 40px; height: 30px;">
+            <input type="button" value="clear" name="b1" style="width: 85%; height: 30px;">
+
+            <script>
+                function clickb(){
+                    document.getElementById("t1").innerText+=document.getElementsByName("b1").value;
+                }
+            </script>
+
+      
+        </form>
+    </div>
+</body>
+</html>

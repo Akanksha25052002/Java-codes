@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Uid:
+    <span id="p1"></span><br>
+    Pwd:
+    <span id="p2"></span><br>
+
+    <script>
+        var u=window.localStorage.getItem("uid");
+        var p=window.localStorage.getItem("pwd");
+        // console.log(u+" "+p);
+        document.getElementById("p1").innerText=u;
+        document.getElementById("p2").innerText=p;
+
+    </script>
+</body>
+</html>

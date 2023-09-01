@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function show(){
+        var a=document.getElementById("t1").value;
+        // var a=document.getElementById("t1");
+
+
+        // alert("hello"+" "+a);
+        alert("hello"+" "+a.ReadOnly);
+        // alert("hello"+" "+a.value);
+        // alert("hello"+" "+a.name);
+
+    }
+</script>
+<body>
+<input type="text" id="t1" /><br/>
+<!-- <input type="button" value="click" onclick="show(t1.value)"/> -->
+<input type="button" value="click" onclick="show()"/>
+
+</body>
+</html>
