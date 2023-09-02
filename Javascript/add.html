@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="t1">
+<input type="button" value="add" onclick="add()">
+<p id="p1"></p>
+
+<script>
+    function add(){
+        var a=document.getElementById("t1").value;
+        if((a.charAt(0)=="P" || a.charAt(0)=="p") && (a.charAt(1)=="Y" || a.charAt(1)=="y")){
+            document.getElementById("p1").innerText=a;
+        }
+        else{
+            document.getElementById("p1").innerText="Py"+a;
+        }
+    }
+</script>
+</body>
+</html>
