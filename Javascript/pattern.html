@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="button" onclick="pat()" value="pattern">
+<p id="p1"></p>
+<script>
+    function pat(){
+        for(i=1;i<=10;i++){
+            for(j=1;j<=i;j++){
+                document.getElementById("p1").innerText+="*";
+                console.log("*");
+            }
+            document.getElementById("p1").innerText+=" ";
+            console.log(" ");
+
+        }
+    }
+</script>
+</body>
+</html>
