@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1">
+    <input type="button" onclick="fnnum()" value="click">
+
+<script>
+    myColor=["red","green","yellow","pink"];
+    console.log(myColor.toString());
+    console.log(myColor.join(" "));
+
+    // console.log(myColor);
+</script>
+<script>
+    function fnnum(){
+       var n=document.getElementById("t1").value;
+       n=Array.from(n);
+        for(i=0;i<n.length;i++){
+            if((n[i]%2===0) && (n[i+1]%2===0)){
+               console.log(n.push("-"));
+            }
+        }
+    }
+    
+</script>
+
+</body>
+</html>

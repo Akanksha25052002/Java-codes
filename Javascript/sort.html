@@ -8,11 +8,19 @@
 <body>
     <input type="text" id="t1">
     <input type="button" value="click" id="b1" onclick="abc()">
+    <input type="button" value="click2" id="b2" onclick="sorting()">
+
 
     <script>
         function abc(){
             var a=t1.value.split("").sort().join("").toLowerCase();
             console.log(a);
+        }
+
+        function sorting(){
+            var a=[12,-87,42,-12,2,13];
+           d= a.sort((b,c)=>{return b-c});
+           console.log(d);
         }
     </script>
 </body>
