@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s1{
+            color: blue;
+            background-color: yellow;
+            font-size: 20px;
+        }
+
+        .s2{
+            color: pink;
+            background-color: red;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<script src="../js/jquery.js"></script>
+<script>
+    // if(window.jQuery){
+        // $(document).ready(function(){alert('hello')})
+    // }
+    // $(document).ready(function(){$(".c1").hide("slow")})
+    // $(document).ready(function(){$("p").hide("slow")})
+    // $(document).ready(function(){$("").hide("slow")})
+
+
+</script>
+<!-- <script>
+    $(document).ready(function(){
+        $("#b1").click(function(){$("p").hide("slow")})
+    }
+    $(document).ready(function(){$("h1").click(function(){$("#b2").fadeIn("slow")})})
+</script> -->
+
+<script>
+    // $(document).ready(function(){$("#b1").click(function(){alert($("#t1").val());});
+
+    $(document).ready(function(){$("#b1").click(function(){$("p1").append($("#t1").val());})})
+</script>
+<script>
+    $(function(){
+        $("h1").css("border","2px solid red");
+    })
+</script>
+<script>
+    // $("#b2").click(function(){$("h1").addClass("s1");})
+    // $("#b2").click(function(){$("h1").removeClass("s1");})
+    // $("#b2").click(function(){$("h1").remove();})
+    // $("h1").remove();
+    $(function(){$("#d2").css("border","3px solid")});
+    $("#d2")
+
+$("#b3").click(function(){alert($("#cb1").prop("checked"))});
+if($("#cb1").prop("checked")){$("#cb1").prop("checked",false)}else{$("#cb1").prop("checked",true)});
+</script>
+<body>
+    <h1>hello</h1>
+    <p class="c1" id="p1">one</p>
+    <p>two</p>
+    <p>three</p>
+    <p class="c1">four</p>
+    <div id="d2">
+        <input type="button" id="b1" value="click">
+        <input type="button" id="b2" value="click2">
+        <input type="text" id="t1">
+        <input type="text" id="t2">
+        </div>
+        <input type="checkbox" id="cb1" disabled>
+        <input type="button" value="click" id="b3">
+
+
+</body>
+</html>
