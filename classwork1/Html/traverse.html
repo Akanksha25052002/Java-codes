@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="../js/jquery.js"></script>
+
+<body>
+
+    <table>
+        <tr>
+            <td class="name">Aman</td>
+            <td class="age">21</td>
+            <td class="salary">25000</td>
+            <td class="city">delhi</td>
+            <td><input type="button" value="click"></td>
+        </tr>
+
+        <tr>
+            <td class="name">priya</td>
+            <td class="age">25</td>
+            <td class="salary">15000</td>
+            <td class="city">pune</td>
+            <td><input type="button" value="click"></td>
+        </tr>
+
+        <tr>
+            <td class="name">vidhi</td>
+            <td class="age">24</td>
+            <td class="salary">20000</td>
+            <td class="city">bhopal</td>
+            <td><input type="button" value="click"></td>
+        </tr>
+
+        <tr>
+            <td class="name">suman</td>
+            <td class="age">25</td>
+            <td class="salary">35000</td>
+            <td class="city">gwalior</td>
+            <td><input type="button" value="click"></td>
+        </tr>
+
+        <tr>
+            <td class="name">yash</td>
+            <td class="age">20</td>
+            <td class="salary">28000</td>
+            <td class="city">nagpur</td>
+            <td><input type="button" value="click"></td>
+        </tr>
+
+        <tr>
+            <td class="name">Ajay</td>
+            <td class="age">26</td>
+            <td class="salary">15000</td>
+            <td class="city">indore</td>
+            <td><input type="button" value="click"></td>
+        </tr>
+    </table>
+    
+    <!-- <section>
+        <div>
+            <p>one</p>
+            <p>two</p>
+            <p class="c1">three</p>
+        </div>
+        <div>
+            <ul>
+                <li>four</li>
+                <li>five</li>
+                <li id="i1">six</li>
+                <li>seven</li>
+                <li class="c1">eight</li>
+            </ul>
+        </div>
+        <p>complete</p>
+    </section> -->
+    <script>
+        // // $(document).ready(function(){$("#i1").parent().css("border","2px solid")})
+        // // $(document).ready(function(){$("#i1").parents().css("border","2px solid")})
+        // $(document).ready(function(){$("#i1").parents("div").css("border","2px solid")})
+        // console.log($("#i1").parent().html());
+        // console.log($("#i1").parent().text());
+        // // console.log($("#i1").parent().remove());
+
+        // // console.log($("#i1").parent().hide());
+        // // $("#i1").parentsUntil("section").hide();
+        //  $("#i1").parentsUntil("section").css("border","2px solid");
+
+        // //  $("#i1").siblings().css("border","2px solid")
+
+        // //  $("#i1").siblings(".c1").css("border","2px solid")
+
+        //  console.log($("#i1").siblings(1).text());
+        //  console.log($("#i1").siblings().eq(1).text());
+
+        //  $("#i1").siblings().each(function(i,v){console.log(v);})
+        //  $("#i1").siblings().each(function(i,v){console.log(v.innerText);})
+
+        //  $("#i1").siblings().next().css("border","2px solid")
+        // $("#i1").siblings().prev().css("border","2px solid")
+
+        // $("#i1").next().css("border","2px solid")
+        // $("#i1").prev().css("border","2px solid")
+
+        // $("section").children().css("border","2px solid")
+        // $("section").children().eq(0).css("border","2px solid")
+
+        // $("section").children().each(function(i,v){console.log(v)})
+        // $("section").children().each(function(i,v){console.log(v.innerText)})
+
+        $("section").children("p").css("border","2px solid")
+
+    </script>
+    <script>
+        // $("input").click(function(){console.log($(this).parent().parent().html());})
+
+        // $("input").click(function(){console.log($(this).parents("tr").html());})
+
+        // $("input").click(function(){console.log($(this).closest("tr").html());})
+
+        // $("input").click(function(){console.log($(this).remove("tr").html());})
+
+        // $("input").click(function(){console.log($("input").remove("tr").html());})
+
+        // $("input").click(function(){console.log($(this).closest("tr").find(".age").text());})
+
+        $("input").click(function(){console.log($(this).parent().siblings(".age").text());})
+
+       
+
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>
