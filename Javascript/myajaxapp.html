@@ -1,0 +1,17 @@
+<script src="../js"></script>
+<script>
+const settings = {
+	async: true,
+	crossDomain: true,
+	url: 'https://irctc1.p.rapidapi.com/api/v3/trainBetweenStations?fromStationCode=GWL&toStationCode=NDLS&dateOfJourney=%3CREQUIRED%3E',
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '28c747f3a0msh541c32be77d250ep13a842jsnce2ee22a82d4',
+		'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
+	}
+};
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+</script>

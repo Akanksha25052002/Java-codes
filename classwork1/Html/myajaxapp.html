@@ -1,0 +1,65 @@
+<html>
+<script src="../js/jquery.js"></script>
+<script>
+
+$(function()
+{
+
+        $("#b1").click(function(){
+
+            $("tbody").html("");
+            var frst=$("#fromstn").val();
+            var tost=$("#tostn").val();
+
+            console.log(frst+","+tost);
+            const settings = {
+                    async: true,
+                    crossDomain: true,
+                    url: 'https://irctc1.p.rapidapi.com/api/v3/trainBetweenStations?fromStationCode='+frst+'&toStationCode='+tost+'&dateOfJourney=2023-09-12',
+                    method: 'GET',
+                    headers: {
+                        'X-RapidAPI-Key': '28c747f3a0msh541c32be77d250ep13a842jsnce2ee22a82d4',
+                        'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
+                    }
+                };
+
+                
+                $.ajax(settings).done(function (response) 
+                {
+                    var str="";
+                    console.log(response.data);
+                    response.data.forEach(train=>{
+                        str += "<tr><td>"+train.train_name+"<td>"+train.train_number+"<td>"+train.from_std;
+                    });
+             
+                    $("tbody").append(str);
+
+                });
+
+             
+
+        });
+
+
+});
+</script>
+<body>
+    <h1>train between gwl and delhi</h1>
+    <div>
+        <form>
+        From:<input type="text" id="fromstn" /><br>
+        To:<input type="text" id="tostn" /><br>
+        Date:<input type="date" pattern="yyyy-mm-dd" />
+        <input type="button" value="display" id="b1" />
+        <input type="submit" value="submit" id="b2" />
+    </form>
+    </div>
+    <table border>
+        <tr><td>Train Name<td>Train number<td>Arrival time
+            <tbody>
+
+            </tbody>
+    </table>
+</body>
+</html>
+
